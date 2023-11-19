@@ -1,0 +1,212 @@
+body{
+    background:linear-gradient(45deg,
+    #ffb3d5d6, #bae2ffcb , 
+    rgba(227, 183, 255, 0.819),
+     rgb(255, 154, 154),
+     rgba(255, 255, 128, 0.82),
+     rgba(255, 197, 90, 0.836));
+
+    background-size: 300% 300%;
+    animation: color 16s ease-in-out infinite;
+}
+
+@keyframes color {
+    0%{
+        background-position:  0 50%;
+    }
+    50%{
+        background-position:  100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+    
+}
+
+.header{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 50px;
+}
+
+.intro{
+    height: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: rgb(196, 113, 255);
+    box-shadow: #b3c9ffb0 10px 10px 5px;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    
+}
+.photo{
+    height:500px;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: #b3c9ffb0 10px 10px 5px;
+    background-color: rgb(255, 255, 255);
+    
+}
+.photo>img{
+    width: 100%;
+    height: 100%;
+}
+
+.aboutme{
+    width: 90%;
+    text-align: justify;
+}
+
+
+.name>span{
+ 
+    font-family: 'Lobster Two', sans-serif;
+    background: linear-gradient(45deg,
+    #ff86bc, #67c0ff , 
+    rgb(227, 183, 255),
+     rgb(255, 128, 128),
+     rgb(255, 164, 128),
+     rgb(255, 184, 54));
+
+     -webkit-background-clip: text;
+     color:transparent; 
+}
+.name{
+    font-family: 'Poiret One', sans-serif;
+    font-size: 3rem;
+}
+
+.intro>.hi{
+    font-size: 2rem;
+}
+.intro p{
+
+    font-family: 'Syne', sans-serif;
+    font-size: 1.1rem;
+    
+}
+    
+
+@media (max-width:1200px) {
+
+    .header{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr ;
+        gap: 20px;
+        height: 100vh;
+        margin: auto;
+        padding: 0px;
+     
+}
+    .intro{
+    width: 95%;
+    margin: auto;
+    height: auto;
+ 
+}
+    .photo{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: 50px;
+    border-radius: 50%;    
+
+}
+.photo>img{
+    width: 100%;
+    height: 100%;
+   
+}
+@media only screen and (max-width: 620px) {
+    .name{
+        font-family: 'Poiret One', sans-serif;
+        font-size: 2rem;
+    }
+    .intro>.hi{
+        font-size: 1.5rem;
+    }
+    .intro p{
+    
+        font-family: 'Syne', sans-serif;
+        font-size: 0.8rem;
+        
+    }
+    .photo>img{
+        width: 100%;
+        height: 100%;
+       
+    }
+}
+}
+
+ /* @media only screen and (max-width: 620px) {
+    .header{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr ;
+        gap: 0px;
+        height: auto;
+    }
+    .intro{
+        width: 90%;
+    }
+    .photo{
+        width: 90%;
+        height: auto;
+    }
+    .photo>img{
+        width: 100%;
+        height: auto;
+   
+    }
+    }
+
+ */
+.nightbutton{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.nightbutton:active{
+    body{
+        background:linear-gradient(45deg,
+        #5f0b31d6, #00538ecb , 
+        rgba(57, 13, 85, 0.819),
+         rgb(103, 7, 7),
+         rgba(99, 99, 11, 0.82),
+         rgba(110, 76, 13, 0.836));
+    
+        background-size: 300% 300%;
+        animation: color 16s ease-in-out infinite;
+    }
+}
+#changeButton{
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+#changeButtonLight{
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.intro:hover{
+    box-shadow: #b1e3feb0 10px 10px 20px;
+
+}
+.photo:hover{
+    box-shadow: #b1e3feb0 10px 10px 20px;
+
+}
