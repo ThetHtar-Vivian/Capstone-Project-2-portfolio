@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Lobster+Two&family=Poiret+One&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css">
+<body>
+
+
+
+    <nav class="desktop-nav">
+        <div class="logo"><span class="logobg">Thet Htar Shwe Sin</span></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <nav class="hamburger-nav">
+        <div class="logo"><span class="logobg">Thet Htar Shwe Sin</span></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                
+            </div>
+        </div>
+
+    </nav>
+    <button id="changeButton"><i class="fa fa-moon-o" style="color: white; font-size: 24px;"></i></button>
+    <button id="changeButtonLight"><i class="fa fa-sun-o" style="color: rgb(255, 153, 0); font-size: 24px;"></i></button>
+   
+       <br>
+    <br>
+    <div class="header">
+        <div class="intro">
+         <p class="hi">Hi Guys!</p>
+       
+        <h1 class="name">I'm<span>Thet Htar Shwe Sin </span></h1>
+        
+        <div class="aboutme">
+            <p class="aboutmetext">I am a young computer science student who is passinate about website and designing.
+                I am still learning about how to create beautiful websites that is eye catching.
+                 This is my first profolio with HTML and CSS.
+            </p>
+        </div>
+    
+        </div>
+        <div class="photo">
+            <img src="./assests/vv.gif" alt="a girl making a heart">
+        </div>
+    </div>
+        <script src="./script.js"></script>
+</body>
+</html>
